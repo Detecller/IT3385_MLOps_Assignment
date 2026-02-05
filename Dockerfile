@@ -29,4 +29,4 @@ ENV STREAMLIT_SERVER_ENABLECORS=false
 EXPOSE 8501
 
 # Run Streamlit app
-CMD ["streamlit", "run", "Introduction.py"]
+CMD streamlit run Introduction.py --server.port $PORT --server.address 0.0.0.0 --server.headless true
