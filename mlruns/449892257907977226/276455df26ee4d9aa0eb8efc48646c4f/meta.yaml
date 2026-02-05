@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/449892257907977226/276455df26ee4d9aa0eb8efc48646c4f/artifacts
+end_time: null
+entry_point_name: ''
+experiment_id: '449892257907977226'
+lifecycle_stage: active
+run_id: 276455df26ee4d9aa0eb8efc48646c4f
+run_name: SVM - Linear Kernel
+run_uuid: 276455df26ee4d9aa0eb8efc48646c4f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1770126699871
+status: 1
+tags: []
+user_id: DELL

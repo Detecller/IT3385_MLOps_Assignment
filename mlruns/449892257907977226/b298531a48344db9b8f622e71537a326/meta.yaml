@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/449892257907977226/b298531a48344db9b8f622e71537a326/artifacts
+end_time: null
+entry_point_name: ''
+experiment_id: '449892257907977226'
+lifecycle_stage: active
+run_id: b298531a48344db9b8f622e71537a326
+run_name: Gradient Boosting Classifier
+run_uuid: b298531a48344db9b8f622e71537a326
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1770126694074
+status: 1
+tags: []
+user_id: DELL

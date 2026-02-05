@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/data/winston/nyp/Year%203/Semester%202/Machine%20Learning%20Operations/Assignment/dev/mlops_assignment/notebooks/mlruns/122559721011877802/1ae9372926a04027b77c73dc35341e42/artifacts
+end_time: null
+experiment_id: '122559721011877802'
+lifecycle_stage: active
+run_id: 1ae9372926a04027b77c73dc35341e42
+run_name: Session Initialized 487f
+run_uuid: 1ae9372926a04027b77c73dc35341e42
+start_time: 1770125550612
+status: 1
+user_id: DELL
+tags: []
+source_type: 4
+source_name: ''
+entry_point_name: ''
+source_version: ''
