@@ -21,9 +21,11 @@ if uploaded_file is not None:
         st.subheader('Results')
         st.dataframe(df)
 
+        csv_buffer = df.to_csv(index=False).encode('utf-8')
+
         st.download_button(
-            "Download Results",
-            df.to_csv(index=False),
-            "alzheimers_batch_predictions.csv",
-            "text/csv"
+            label="Download Results",
+            data=csv_buffer,
+            file_name="alzheimers_batch_predictions.csv",
+            mime="text/csv"
         )
