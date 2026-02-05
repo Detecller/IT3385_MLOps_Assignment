@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 from mlops_assignment.predict_alzheimer import predict
 
-st.title("🧠 Alzheimer's Disease Prediction")
+st.title("🧠 Alzheimer's Disease Prediction (Single)")
 
 # User Inputs
 st.header("Demographic Details")
@@ -149,7 +149,7 @@ if st.button("Predict"):
         1: "Likely to have Alzheimer’s disease"
     }
 
-    if pred == 0:
-        st.success(f"{label_map[pred]} (Confidence: {prob:.2%})")
+    if pred.iloc[0] == 0:
+        st.success(f"{label_map[pred.iloc[0]]} (Confidence: {prob.iloc[0]:.2%})")
     else:
-        st.error(f"{label_map[pred]} (Confidence: {prob:.2%})")
+        st.error(f"{label_map[pred.iloc[0]]} (Confidence: {prob.iloc[0]:.2%})")
