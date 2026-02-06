@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/449892257907977226/585ab78b94bb416b8ea931a9e9c5b217/artifacts
+end_time: 1770392487485
+entry_point_name: ''
+experiment_id: '449892257907977226'
+lifecycle_stage: active
+run_id: 585ab78b94bb416b8ea931a9e9c5b217
+run_name: Extra Trees Classifier
+run_uuid: 585ab78b94bb416b8ea931a9e9c5b217
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1770392486983
+status: 3
+tags: []
+user_id: DELL

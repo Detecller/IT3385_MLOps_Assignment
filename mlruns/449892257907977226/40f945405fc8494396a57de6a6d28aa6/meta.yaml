@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/449892257907977226/40f945405fc8494396a57de6a6d28aa6/artifacts
+end_time: 1770395563240
+entry_point_name: ''
+experiment_id: '449892257907977226'
+lifecycle_stage: active
+run_id: 40f945405fc8494396a57de6a6d28aa6
+run_name: Quadratic Discriminant Analysis
+run_uuid: 40f945405fc8494396a57de6a6d28aa6
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1770395562701
+status: 3
+tags: []
+user_id: DELL

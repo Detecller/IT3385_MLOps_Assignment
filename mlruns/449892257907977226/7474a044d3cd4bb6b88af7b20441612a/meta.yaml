@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/449892257907977226/7474a044d3cd4bb6b88af7b20441612a/artifacts
+end_time: 1770395566485
+entry_point_name: ''
+experiment_id: '449892257907977226'
+lifecycle_stage: active
+run_id: 7474a044d3cd4bb6b88af7b20441612a
+run_name: Dummy Classifier
+run_uuid: 7474a044d3cd4bb6b88af7b20441612a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1770395565934
+status: 3
+tags: []
+user_id: DELL

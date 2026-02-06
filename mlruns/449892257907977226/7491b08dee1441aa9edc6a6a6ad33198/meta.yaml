@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/449892257907977226/7491b08dee1441aa9edc6a6a6ad33198/artifacts
+end_time: 1770395557755
+entry_point_name: ''
+experiment_id: '449892257907977226'
+lifecycle_stage: active
+run_id: 7491b08dee1441aa9edc6a6a6ad33198
+run_name: Ada Boost Classifier
+run_uuid: 7491b08dee1441aa9edc6a6a6ad33198
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1770395557282
+status: 3
+tags: []
+user_id: DELL

@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/645305697115739496/65a1a42b1cef4aa6919b4d3a599e467f/artifacts
+end_time: 1770394688906
+entry_point_name: ''
+experiment_id: '645305697115739496'
+lifecycle_stage: active
+run_id: 65a1a42b1cef4aa6919b4d3a599e467f
+run_name: Ridge Classifier
+run_uuid: 65a1a42b1cef4aa6919b4d3a599e467f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1770394688290
+status: 3
+tags: []
+user_id: DELL

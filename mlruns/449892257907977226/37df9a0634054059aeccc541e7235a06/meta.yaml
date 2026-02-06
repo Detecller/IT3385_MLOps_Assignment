@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/449892257907977226/37df9a0634054059aeccc541e7235a06/artifacts
+end_time: 1770395560036
+entry_point_name: ''
+experiment_id: '449892257907977226'
+lifecycle_stage: active
+run_id: 37df9a0634054059aeccc541e7235a06
+run_name: Logistic Regression
+run_uuid: 37df9a0634054059aeccc541e7235a06
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1770395559536
+status: 3
+tags: []
+user_id: DELL

@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/645305697115739496/25398ad62f364318a29c3de3b8faaf73/artifacts
+end_time: 1770394684432
+entry_point_name: ''
+experiment_id: '645305697115739496'
+lifecycle_stage: active
+run_id: 25398ad62f364318a29c3de3b8faaf73
+run_name: Decision Tree Classifier
+run_uuid: 25398ad62f364318a29c3de3b8faaf73
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1770394683867
+status: 3
+tags: []
+user_id: DELL

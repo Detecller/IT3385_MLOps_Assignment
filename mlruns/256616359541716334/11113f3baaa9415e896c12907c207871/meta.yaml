@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/256616359541716334/11113f3baaa9415e896c12907c207871/artifacts
+end_time: 1770395730803
+entry_point_name: ''
+experiment_id: '256616359541716334'
+lifecycle_stage: active
+run_id: 11113f3baaa9415e896c12907c207871
+run_name: Light Gradient Boosting Machine
+run_uuid: 11113f3baaa9415e896c12907c207871
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1770395730300
+status: 3
+tags: []
+user_id: DELL

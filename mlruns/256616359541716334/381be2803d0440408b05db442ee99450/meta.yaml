@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/256616359541716334/381be2803d0440408b05db442ee99450/artifacts
+end_time: 1770395773959
+entry_point_name: ''
+experiment_id: '256616359541716334'
+lifecycle_stage: active
+run_id: 381be2803d0440408b05db442ee99450
+run_name: CatBoost Classifier
+run_uuid: 381be2803d0440408b05db442ee99450
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1770395773114
+status: 3
+tags: []
+user_id: DELL

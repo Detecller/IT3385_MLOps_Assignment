@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/449892257907977226/15634d887425490392f39b0ec5733a36/artifacts
+end_time: 1770392482334
+entry_point_name: ''
+experiment_id: '449892257907977226'
+lifecycle_stage: active
+run_id: 15634d887425490392f39b0ec5733a36
+run_name: Random Forest Classifier
+run_uuid: 15634d887425490392f39b0ec5733a36
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1770392481835
+status: 3
+tags: []
+user_id: DELL

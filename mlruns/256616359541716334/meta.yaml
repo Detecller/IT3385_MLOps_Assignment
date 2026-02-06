@@ -1,0 +1,6 @@
+artifact_location: mlflow-artifacts:/256616359541716334
+creation_time: 1770393522465
+experiment_id: '256616359541716334'
+last_update_time: 1770393522465
+lifecycle_stage: active
+name: alzheimer_top5_exp
