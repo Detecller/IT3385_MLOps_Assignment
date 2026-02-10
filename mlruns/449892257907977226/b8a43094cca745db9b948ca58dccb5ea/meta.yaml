@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/449892257907977226/b8a43094cca745db9b948ca58dccb5ea/artifacts
+end_time: 1770717493513
+entry_point_name: ''
+experiment_id: '449892257907977226'
+lifecycle_stage: active
+run_id: b8a43094cca745db9b948ca58dccb5ea
+run_name: Extreme Gradient Boosting
+run_uuid: b8a43094cca745db9b948ca58dccb5ea
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1770717492847
+status: 3
+tags: []
+user_id: DELL

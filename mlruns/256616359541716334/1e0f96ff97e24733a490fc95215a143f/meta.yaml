@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/256616359541716334/1e0f96ff97e24733a490fc95215a143f/artifacts
+end_time: 1770717700829
+entry_point_name: ''
+experiment_id: '256616359541716334'
+lifecycle_stage: active
+run_id: 1e0f96ff97e24733a490fc95215a143f
+run_name: Naive Bayes
+run_uuid: 1e0f96ff97e24733a490fc95215a143f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1770717700179
+status: 3
+tags: []
+user_id: DELL

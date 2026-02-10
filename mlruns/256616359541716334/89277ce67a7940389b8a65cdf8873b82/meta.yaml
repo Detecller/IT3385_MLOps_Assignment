@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/256616359541716334/89277ce67a7940389b8a65cdf8873b82/artifacts
+end_time: 1770717699839
+entry_point_name: ''
+experiment_id: '256616359541716334'
+lifecycle_stage: active
+run_id: 89277ce67a7940389b8a65cdf8873b82
+run_name: Linear Discriminant Analysis
+run_uuid: 89277ce67a7940389b8a65cdf8873b82
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1770717699171
+status: 3
+tags: []
+user_id: DELL
