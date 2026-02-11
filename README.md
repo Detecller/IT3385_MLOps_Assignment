@@ -1,18 +1,18 @@
 # MLOps Assignment
 
-## Team Members
+## 👥 Team Members
 
 - Winston Pawitra Lystanto
 - Chew Rui Hong
 
-## Tasks
+## 🎯 Tasks
 
 - Perform an Exploratory Data Analysis on a Given Dataset
 - Train, validate and develop a Machine Learning pipeline using PyCaret.
 - Build and deploy a front-end web application with real-time prediction
 - Set up development and deployment environment according to MLOps Lifecycle
 
-## Web Application
+## 🌐 Web Application
 
 This app hosts two models to predict whether one has **Alzheimer's Disease** and **Lung Cancer** separately.
 
