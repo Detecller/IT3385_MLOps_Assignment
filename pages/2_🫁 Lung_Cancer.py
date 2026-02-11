@@ -37,6 +37,80 @@ FEATURE_COLUMNS = [
     "Snoring",
 ]
 
+EXPOSURE_SCALE = {
+    1: "None",
+    2: "Very Low",
+    3: "Low",
+    4: "Mild",
+    5: "Moderate",
+    6: "High",
+    7: "Very High",
+    8: "Extreme",
+}
+
+SYMPTOM_SEVERITY_SCALE = {
+    1: "None",
+    2: "Very Mild",
+    3: "Mild",
+    4: "Slight",
+    5: "Moderate",
+    6: "Noticeable",
+    7: "Severe",
+    8: "Very Severe",
+    9: "Critical",
+}
+
+BALANCED_DIET_SCALE = {
+    1: "Very Poor Diet",
+    2: "Poor",
+    3: "Below Average",
+    4: "Average",
+    5: "Slightly Healthy",
+    6: "Healthy",
+    7: "Very Healthy",
+    8: "Excellent",
+}
+
+GENDER_SCALE = {
+    1: "Male",
+    2: "Female",
+}
+
+
+def labeled_selectbox(label, mapping_dict, default_value_int):
+    labels = list(mapping_dict.values())
+    default_label = mapping_dict.get(default_value_int, labels[0])
+    selected_label = st.selectbox(label, options=labels, index=labels.index(default_label))
+    inverse_map = {v: k for k, v in mapping_dict.items()}
+    return inverse_map[selected_label]
+
+
+EXPOSURE_COLUMNS = {
+    "Air_Pollution",
+    "Alcohol_use",
+    "Dust_Allergy",
+    "Occupational_Hazards",
+    "Genetic_Risk",
+    "Chronic_Lung_Disease",
+    "Smoking",
+    "Passive_Smoker",
+    "Obesity",
+}
+
+SYMPTOM_COLUMNS = {
+    "Chest_Pain",
+    "Coughing_of_Blood",
+    "Fatigue",
+    "Weight_Loss",
+    "Shortness_of_Breath",
+    "Wheezing",
+    "Swallowing_Difficulty",
+    "Clubbing_of_Finger_Nails",
+    "Frequent_Cold",
+    "Dry_Cough",
+    "Snoring",
+}
+
 
 if mode == "Single Patient":
     st.header("Patient Features")
@@ -49,17 +123,26 @@ if mode == "Single Patient":
         for i, col in enumerate(FEATURE_COLUMNS):
             current_col = col1 if i % 2 == 0 else col2
 
-            # Simple heuristic: treat Gender as categorical (1/2), others as numeric inputs
-            if col == "Gender":
-                inputs[col] = current_col.selectbox(col, options=[1, 2], format_func=lambda x: f"{x}")
-            else:
-                inputs[col] = current_col.number_input(col, value=0.0)
+            with current_col:
+                if col == "Age":
+                    inputs[col] = st.number_input(col, value=0, min_value=0, step=1)
+                elif col == "Gender":
+                    inputs[col] = labeled_selectbox(col, GENDER_SCALE, default_value_int=1)
+                elif col == "Balanced_Diet":
+                    inputs[col] = labeled_selectbox(col, BALANCED_DIET_SCALE, default_value_int=4)
+                elif col in EXPOSURE_COLUMNS:
+                    inputs[col] = labeled_selectbox(col, EXPOSURE_SCALE, default_value_int=1)
+                elif col in SYMPTOM_COLUMNS:
+                    inputs[col] = labeled_selectbox(col, SYMPTOM_SEVERITY_SCALE, default_value_int=1)
+                else:
+                    inputs[col] = st.number_input(col, value=0.0)
 
         submitted = st.form_submit_button("Predict")
 
     if submitted:
         try:
-            input_df = pd.DataFrame([inputs])
+            features_dict = {col: inputs[col] for col in FEATURE_COLUMNS}
+            input_df = pd.DataFrame([features_dict])
             result = predict_lung_cancer(input_df)
 
             prediction = result.get("prediction", None)
