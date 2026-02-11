@@ -1,5 +1,10 @@
 # MLOps Assignment
 
+## Team Members
+
+- Winston Pawitra Lystanto
+- Chew Rui Hong
+
 ## Tasks
 
 - Perform an Exploratory Data Analysis on a Given Dataset
@@ -61,4 +66,4 @@ Create the python file in `mlops_assignment`. Take `predict_alzheimer.py` as ref
 
 ### Creating Streamlit Pages
 
-Create streamlit file `pages`, adding a number and underscore before each file name. This determines the order of the pages when rendered in the UI.
+Create streamlit file in `pages`, adding a number and underscore before each file name. This determines the order of the pages when rendered in the UI.
