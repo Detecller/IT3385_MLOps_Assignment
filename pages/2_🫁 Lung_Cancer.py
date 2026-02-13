@@ -192,7 +192,10 @@ else:
 
                     df_results = df.copy()
                     df_results["PredictionLabel"] = preds
-                    df_results["Confidence"] = probs
+                    df_results["Confidence"] = [
+                        f"{p:.2f}" if p is not None else ""
+                        for p in probs
+                    ]
 
                     st.subheader("Results")
                     st.dataframe(df_results)
