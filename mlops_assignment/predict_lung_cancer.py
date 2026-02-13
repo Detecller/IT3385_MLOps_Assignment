@@ -4,14 +4,11 @@ import pandas as pd
 from pycaret.classification import load_model, predict_model
 
 
-# Base directory of the repository (one level up from this package)
 BASE_DIR = Path(__file__).resolve().parents[1]
 
-# Path to the PyCaret model (without .pkl extension, as expected by load_model)
 # This corresponds to `models/lung_cancer_pipeline.pkl` in the repo root.
 MODEL_NAME = BASE_DIR / "models" / "lung_cancer_pipeline"
 
-# Load the saved model once at import time
 model = load_model(str(MODEL_NAME))
 
 
@@ -36,7 +33,6 @@ def predict_lung_cancer(input_df: pd.DataFrame) -> dict:
     """
     prediction_df = predict_model(model, data=input_df)
 
-    # Default keys used by PyCaret for classification workflows
     label_col = "prediction_label"
     score_col = "prediction_score"
 
@@ -48,7 +44,15 @@ def predict_lung_cancer(input_df: pd.DataFrame) -> dict:
     elif "Label" in prediction_df.columns:
         prediction = prediction_df["Label"].iloc[0]
 
-    if score_col in prediction_df.columns:
+    try:
+        if hasattr(model, "predict_proba"):
+            proba = model.predict_proba(input_df)
+            if proba is not None and proba.size > 0:
+                probability = float(proba.max(axis=1)[0])
+    except Exception:
+        pass
+
+    if probability is None and score_col in prediction_df.columns:
         probability = float(prediction_df[score_col].iloc[0])
 
     return {
